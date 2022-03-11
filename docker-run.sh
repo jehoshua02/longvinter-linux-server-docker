@@ -1,4 +1,6 @@
 docker run \
+    --detach \
+    --interactive \
     --name longvinter \
     --publish 27015:27015/tcp \
     --publish 27015:27015/udp \
@@ -9,3 +11,5 @@ docker run \
     --rm \
     --volume `pwd`/Game.ini:/home/steam/longvinter-linux-server/Longvinter/Saved/Config/LinuxServer/Game.ini \
     longvinter:latest
+
+docker logs -f longvinter:latest
