@@ -1,0 +1,1 @@
+docker build -t longvinter:latest --progress plain .
