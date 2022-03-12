@@ -24,7 +24,7 @@ RUN cp /home/steam/steamcmd/linux64/steamclient.so /home/steam/.steam/sdk64/
 
 # Installing the server.
 WORKDIR /home/steam
-RUN git clone https://github.com/Uuvana-Studios/longvinter-linux-server.git && cd longvinter-linux-server && git checkout 9bbb56df7821df3df7ed57cb6855ee4a474e7be1
+RUN git clone --depth 1 https://github.com/Uuvana-Studios/longvinter-linux-server.git
 
 # permissions
 USER root
@@ -41,8 +41,10 @@ EXPOSE 7777 27016 27015
 
 # Customize the server
 USER steamcmd
-WORKDIR /home/steam
+WORKDIR /home/steam/longvinter-linux-server
 VOLUME /home/steam/longvinter-linux-server/Longvinter/Saved/Config/LinuxServer/Game.ini
+VOLUME /home/steam/longvinter-linux-server/Longvinter/Saved
 
 # Run the server
-ENTRYPOINT ["sh", "/home/steam/longvinter-linux-server/LongvinterServer.sh"]
+COPY ./entrypoint.sh .
+ENTRYPOINT ["./entrypoint.sh"]
