@@ -41,10 +41,10 @@ EXPOSE 7777 27016 27015
 
 # Customize the server
 USER steamcmd
-WORKDIR /home/steam/longvinter-linux-server
+WORKDIR /home/steam
 VOLUME /home/steam/longvinter-linux-server/Longvinter/Saved/Config/LinuxServer/Game.ini
 VOLUME /home/steam/longvinter-linux-server/Longvinter/Saved
 
 # Run the server
-COPY ./entrypoint.sh .
+COPY --chown=steamcmd:steamcmd ./entrypoint.sh .
 ENTRYPOINT ["./entrypoint.sh"]

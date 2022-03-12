@@ -1,3 +1,3 @@
 #!/bin/sh -eux
-# git pull
-./LongvinterServer.sh
+cd longvinter-linux-server && git pull
+sh /home/steam/longvinter-linux-server/LongvinterServer.sh
