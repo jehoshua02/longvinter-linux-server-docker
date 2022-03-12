@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  server:
+    image: jehoshua02/longvinter-linux-server:latest
+    ports:
+      - "27015:27015/tcp"
+      - "27015:27015/udp"
+      - "27016:27016/tcp"
+      - "27016:27016/udp"
+      - "7777:7777/tcp"
+      - "7777:7777/udp"
+    volumes:
+      - Saved:/home/steam/longvinter-linux-server/Longvinter/Saved
+      - ./Game.ini:/home/steam/longvinter-linux-server/Longvinter/Saved/Config/LinuxServer/Game.ini
+volumes:
+  Saved: {}
