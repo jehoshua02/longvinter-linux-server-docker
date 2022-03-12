@@ -1,4 +1,3 @@
-# https://github.com/Uuvana-Studios/longvinter-linux-server/blob/e97bae51c97dc1ef978761971932e9d91bbedecb/README.md
 FROM ubuntu:20.04
 
 # install git and git lfs
@@ -25,7 +24,7 @@ RUN cp /home/steam/steamcmd/linux64/steamclient.so /home/steam/.steam/sdk64/
 
 # Installing the server.
 WORKDIR /home/steam
-RUN git clone https://github.com/Uuvana-Studios/longvinter-linux-server.git && cd longvinter-linux-server && git checkout e97bae51c97dc1ef978761971932e9d91bbedecb
+RUN git clone https://github.com/Uuvana-Studios/longvinter-linux-server.git && cd longvinter-linux-server && git checkout 9bbb56df7821df3df7ed57cb6855ee4a474e7be1
 
 # permissions
 USER root
