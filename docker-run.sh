@@ -1,7 +1,7 @@
 docker run \
     --detach \
     --interactive \
-    --name longvinter \
+    --name longvinter-9bbb56df7821df3df7ed57cb6855ee4a474e7be1 \
     --publish 27015:27015/tcp \
     --publish 27015:27015/udp \
     --publish 27016:27016/tcp \
