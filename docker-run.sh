@@ -9,4 +9,4 @@ docker run \
     --publish 7777:7777/tcp \
     --publish 7777:7777/udp \
     --volume `pwd`/Game.ini:/home/steam/longvinter-linux-server/Longvinter/Saved/Config/LinuxServer/Game.ini \
-    jehoshua02/longvinter-linux-server:e97bae51c97dc1ef978761971932e9d91bbedecb
+    jehoshua02/longvinter-linux-server:9bbb56df7821df3df7ed57cb6855ee4a474e7be1
