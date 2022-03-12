@@ -75,6 +75,12 @@ docker-compose --help
 - Unofficial (but dang good) Longvinter Docker on Github: https://github.com/jehoshua02/longvinter-linux-server-docker
 - Unofficial (but dang good) Longvinter Docker Hub Repo: https://hub.docker.com/repository/docker/jehoshua02/longvinter-linux-server/general
 
+## Grokenvinter
+
+- My Longvinter server using this project's docker image!
+- Grokenvinter Discord Server: https://discord.gg/tCMNAhQzrb
+
 ### Tools
 
 - Docker Compose CLI Reference: https://docs.docker.com/compose/reference/ 
+- Digital Ocean Referral Link: https://m.do.co/c/6e092dc48e2e
